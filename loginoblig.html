@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="cssoblig.css">
+</head>
+
+<body class="body">
+    
+   <div class="login" id="app" onclick="plsWork()" >Login</div>
+   <div class="loginTxt" id="app2"></div>
+   <div class="getScammed" id="ups"></div>
+    <script>
+
+        // hjelpevariabler til både view og controller
+        
+        // model
+        const app = document.getElementById('app2');
+        
+
+        // view
+        updateView();
+        function updateView() {
+            app.innerHTML = `
+            <h1>Mr. stealyouremail</h1>
+            <label for="email"><b>E-Mail</b></label> 
+            <input id="mailing" type="text" placeholder="Enter E-Mail" name="email" required>
+            <label for="password"><b>Password</b></label>
+            <input id="passwords" type="password" placeholder="Enter Password" name="password" required>
+            <button id="btnCheck" type="submit" onclick="return (Function1() && Function2());" >Login</button>
+        `;
+        }
+        
+        
+        // controller
+        
+        function plsWork() {
+        var x = document.getElementById('app2');
+        if (x.style.opacity === "1") {
+            x.style.opacity = "0";
+            x.style.visibility = "hidden";
+        } 
+        else {
+            x.style.opacity = "1";
+            x.style.visibility = "visible";
+        }
+    }
+
+        function logins() { 
+
+            confirm('thanks for letting me steal your email!');
+        var x = document.getElementById('ups');
+        if (x.style.opacity === "1") {
+            x.style.opacity = "0";
+            x.style.visibility = "hidden";
+            } 
+        else {
+            x.style.opacity = "1";
+            x.style.visibility = "visible";
+        }
+
+        
+        }
+        function ValidateTextBox() {
+        if (document.getElementById("mailing").value.trim() == "") {
+            alert("Please enter email/password!");
+            return false;
+        }
+    };
+      
+    </script>
+
+</body>
+</html>

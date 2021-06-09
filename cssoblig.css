@@ -1,0 +1,50 @@
+.login {
+    background-color: cyan;
+    position:relative;
+    border: solid 2px lightskyblue;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.login:hover {
+  opacity: 80%;
+  background-color: lightblue;
+}
+
+.loginTxt {
+  visibility:hidden;
+  opacity:0;
+  transition:visibility 0.3s linear,opacity 0.3s linear;
+  background-color: cyan;
+  position:relative;
+  border: solid 2px lightskyblue;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.body {
+  background-color: lightgray;
+}
+
+.getScammed {
+  visibility:hidden;
+  opacity:0;
+  background-image: url(https://www.trollface.dk/trollfaceONE.png);
+  transition:visibility 0.3s linear,opacity 0.3s linear;
+  background-color: cyan;
+  position:absolute;
+  border: solid 2px lightskyblue;
+  display: inline-block;
+  padding-left: 230px;
+  padding-right: 240px;
+  padding-top: 210px;
+  padding-bottom: 210px;
+  max-width: 500px;
+  max-height: 500px;
+}
