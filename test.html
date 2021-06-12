@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+<title>Test Suite</title>
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.16.0.css">
+<link rel="stylesheet" href="cssoblig.css">
+<script src="123.js">
+
+</script>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.16.0.js"></script>
+</body>
+<script>
+    function add(a, b) {
+      return a + b;
+    }
+
+    let logins;
+    let ValidateTextBox;
+    let x;
+    let style;
+    let opacity = '';
+    let visibility = '';
+  
+    QUnit.module('add', function() {
+      QUnit.test('should add two numbers', function(assert) {
+        assert.equal(add(1, 1), 2);
+      });
+    });
+    QUnit.module('bigmodule', function(){
+        QUnit.test('should be hidden ', function(assert) {
+        x.style.opacity === "1";
+          x.style.opacity = "0";
+          x.style.visibility = "hidden";
+        
+    
+    });
+    QUnit.module('wassap', function() {
+      QUnit.test('should be visible', function(assert) {
+        x.style.opacity = "1";
+        x.style.visibility = "visible";
+      });
+    });
+    QUnit.module('wassap2', function() {
+      QUnit.test('should alert', function(assert) {
+        alert("Please enter email/password!");
+        return true;
+        expect(0)
+        // call expect(0)
+      });
+    });
+  });
+  </script>
